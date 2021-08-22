@@ -1,0 +1,144 @@
+*{
+    text-decoration: none;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;;
+}
+.top-wrapper{
+    background-image: url(images/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header-logo img{
+    width: 130px;
+    height: 60px;
+}
+.header-list{
+    list-style: none;
+    display: flex;
+    
+}
+.header-list li a{
+    color: black;
+    font-size: 18px;
+    margin-right: 40px;
+}
+.main-phrase{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.main-phrase p{
+    font-size: 6vw;
+    color: black;
+}
+.section-title{
+    font-size: 38px;
+    color: black;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.news{
+    margin: 0 auto;
+    padding: 90px 0;
+    max-width: 1100px;
+}
+.news-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.news-item p{
+    font-size: 18px;
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+}
+.case-contents{
+    display: flex;
+}
+.case-item{
+    width: 50%;
+    text-align: center;
+}
+.case-item img{
+    max-width: 430px;
+    margin: 0 auto;
+}
+.building{
+    width: 100%;
+}
+.more{
+    width: 300px;
+}
+.case-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+.case-btn a{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: 12px 40px;
+    font-size: 20px;
+    color: black; 
+}
+.col-md-4{
+    padding: 0;
+}
+.footer{
+    background-color: black;
+   
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+.footer-logo img{
+    height: 40px;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+}
+.footer-list a{
+    color: white;
+    margin-right: 60px;
+}
+.copy{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+/*レスポンシブ対応*/
+.hamburger{
+    display: none;
+}
+@media(max-width:900px){
+    .header-list{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 50px;
+    }
+    .main-phrase p{
+        font-size: px;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+}
